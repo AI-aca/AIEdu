@@ -2,7 +2,7 @@
 
 본 교육 과정은 비대면 영상 강의(유튜브 및 온라인 튜토리얼)를 보고 수강생들이 스스로 학습하는 **'비대면 자기주도형 영상 교육'**에 특화되어 설계되었습니다. 
 
-강사의 즉각적인 오프라인 조력이 없는 환경임을 고려하여, 수강생의 모든 조작 동선을 복잡한 로컬 PC 설정이 아닌 **'안티그래비티 2.0' 에디터 플랫폼 중심**으로 단일화했습니다. 덧셈(안티그래비티 프리뷰에 텍스트 출력)을 모르는 이에게 미적분(깃허브 연동, 서버 배포)을 요구하지 않도록, **"사전 시청한 영상 1개의 내용과 안티그래비티 2.0 실습 수준이 100% 일치"**하도록 재설계하여 수강생들이 낙오 없이 완독할 수 있도록 구성했습니다.
+강사의 즉각적인 오프라인 조력이 없는 환경임을 고려하여, 수강생의 모든 조작 동선을 복잡한 로컬 PC 설정이 아닌 **'안티그래비티 2.0' 에디터 플랫폼 중심**으로 단일화했습니다. 덧셈(안티그래비티 프리뷰에 텍스트 출력)을 모르는 이에게 미적분(깃허브 연동, 서버 배포)을 요구하지 않도록, **"사전 시청한 영상 1개의 실제 내용과 안티그래비티 2.0 실습 수준이 100% 일치"**하도록 재설계하여 수강생들이 낙오 없이 완독할 수 있도록 구성했습니다.
 
 ---
 
@@ -87,8 +87,8 @@ graph TD
 #### 2회차: 안티그래비티 2.0 에디터 다운로드 및 첫 구동
 *   **회차 학습 목적**: 안티그래비티 2.0 에디터 환경을 내 컴퓨터에 설치하고 첫 기동 테스트를 완료합니다.
 *   **권장 시청 영상**:
-    *   [40대, 50대가 '바이브 코딩'을 해야 하는 3가지 이유 + Cursor AI 바로 실습](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEodVh2EZT29p2IWrT5JfJGsWVdBWV6CAGo1euVU3-Tz55z5FtblwVqxDKuxnbdiQEQMCmARU5D8XOX4Z5FmNlztL183zMyVHtLGVydrUGor4KPhlpG4526Oxc0AhUV_TlQ)
-*   **영상 실제 내용**: 비개발자가 코딩 툴을 내 컴퓨터에 내려받아 설치하고, 에이전트와 첫 대화를 나누며 간단한 텍스트 화면을 렌더링하는 실습 과정을 직접 시연합니다.
+    *   [바이브코딩의 끝판왕 구글 Antigravity를 소개합니다 | 기술노트with 알렉](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcAth41ATxziTK_v4GOLyCLAn-tiUx5AcJMIGAo7AstbDrzE_fp2czuB8Lbg-GMLX7_Yq7I3uj6NhuRZtKg1wzMCGVOpLSRg48sDmzCoUJRlxNRdFNKFUcoXJj-tjR1bdE)
+*   **영상 실제 내용**: 구글의 차세대 AI 코딩 에이전트 도구인 안티그래비티의 철학과 기본 작동 화면, 비개발자도 코드 타이핑 없이 마우스 조작과 명령만으로 프로그램을 빌드하는 첫 기동 시연을 다룹니다.
 *   **활동**: 안티그래비티 2.0 프로그램 다운로드 및 실행 환경 세팅 완료. *(실습 없음)*
 
 ---
@@ -132,7 +132,7 @@ graph TD
 *   **권장 시청 영상**:
     *   [초보자를 위한 디버깅 비법](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmoUdD5S7ZbDhwByPOJvLsCwvC_W6P2-Ytg9GBVEj8ELkk7VsQoFu9omvmIuBz1RwlMdF7OyzxUXIfmFcnyjEWa_fgMngmwnG747WOZz76YicEoghRniZxDbaoW0tqRZkm)
 *   **영상 실제 내용**: 실행 중 작동이 멈추거나 빨간 에러 메시지가 뜰 때, 개발자 모드(F12) 콘솔 로그를 복사하여 에이전트 챗 창에 던져 자율 QA 치료를 유도하는 과정을 상세히 시연합니다.
-*   **🎯 [실습 3 완료] 1단계 단과 계산기**: 단과/종합 선택 결과 금액이 안티그래비티 프리뷰에 실시간 연산 출력되는 계산기 최종 완성.
+*   **🎯 [실습 3 완료] 1단계 단과 계산기**: 할인 조건에 따라 계산 결과가 안티그래비티 프리뷰에 실시간 연산 출력되는 계산기 최종 완성.
 
 ---
 
