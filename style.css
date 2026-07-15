@@ -450,6 +450,10 @@ body {
         margin-left: 0;
         padding: 40px 24px;
     }
+    .content-area {
+        margin-left: 0;
+        padding: 30px 16px;
+    }
     .section-title {
         font-size: 22px; /* 모바일 대분류 비례 축소 */
         flex-wrap: wrap; /* 회차 배지가 자연스럽게 하단 왼쪽으로 정렬되도록 흐름 분리 */
