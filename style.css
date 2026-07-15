@@ -446,9 +446,21 @@ body {
         position: relative;
         padding: 30px 24px;
     }
-    .content-area {
+    .main-content {
         margin-left: 0;
         padding: 40px 24px;
+    }
+    .section-title {
+        font-size: 22px; /* 모바일 대분류 비례 축소 */
+        flex-wrap: wrap; /* 회차 배지가 자연스럽게 하단 왼쪽으로 정렬되도록 흐름 분리 */
+        gap: 8px;
+        line-height: 1.4;
+    }
+    .step-badge {
+        white-space: nowrap; /* "X단계:" 문구가 세로로 찢어지는 현상 완벽 차단 */
+    }
+    .card-title {
+        font-size: 16px; /* 모바일 카드 제목 비례 축소 */
     }
     .guide-grid {
         grid-template-columns: 1fr;
