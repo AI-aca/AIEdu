@@ -233,9 +233,9 @@ body {
 
 /* 펼침 유도 화살표 */
 .arrow-icon {
-    width: 24px;
-    height: 24px;
-    fill: #94a3b8;
+    width: 30px;
+    height: 30px;
+    fill: #10b981; /* 에메랄드 민트 포인트 컬러 */
     transition: transform 0.3s ease;
 }
 
