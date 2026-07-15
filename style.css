@@ -515,6 +515,16 @@ body {
     border-color: #d97706; /* Focus amber */
 }
 
+/* 크롬/사파리 자동완성 배경색 리셋 (Autofill Reset) */
+#password-input:-webkit-autofill,
+#password-input:-webkit-autofill:hover,
+#password-input:-webkit-autofill:focus,
+#password-input:-webkit-autofill:active {
+    -webkit-text-fill-color: #f8fafc !important;
+    -webkit-box-shadow: 0 0 0px 1000px #0f172a inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 #login-btn {
     background-color: #d97706;
     color: #ffffff;
