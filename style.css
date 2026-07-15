@@ -147,22 +147,29 @@ body {
 
 /* 3. 단계별 카드 디자인 */
 .section-title {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 800;
     margin-bottom: 24px;
     color: #f8fafc;
-    border-bottom: 2px solid #334155;
+    border-bottom: 3px solid #d97706; /* 굵은 Amber 포인트 밑줄 */
     padding-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 12px;
+    text-shadow: 0 0 10px rgba(217, 119, 6, 0.2);
+}
+
+/* 단계별 타이틀 내의 숫자 강조 */
+.section-title::first-letter {
+    color: #d97706;
 }
 
 .section-title-badge {
-    background-color: #3b82f6;
+    background-color: #d97706; /* 파란색에서 Amber 테마로 통일 */
     color: #ffffff;
-    font-size: 12px;
-    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 12px;
     border-radius: 6px;
 }
 
@@ -198,20 +205,21 @@ body {
 .card-title-area {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
 }
 
 .card-week-badge {
-    font-size: 12px;
-    color: #3b82f6;
-    font-weight: 700;
+    font-size: 16px; /* 12px에서 16px로 대폭 확대 */
+    color: #d97706; /* 파란색에서 시각적으로 잘 보이는 Amber 골드로 변경 */
+    font-weight: 800;
     text-transform: uppercase;
 }
 
 .card-title {
-    font-size: 18px;
+    font-size: 21px; /* 18px에서 21px로 가독성 확대 */
     font-weight: 700;
     color: #f8fafc;
+    line-height: 28px;
 }
 
 /* 펼침 유도 화살표 */
