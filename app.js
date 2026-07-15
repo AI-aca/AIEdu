@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (hashedVal === TARGET_HASH) {
             loginOverlay.classList.add("hidden");
             loginError.textContent = "";
+            // 로그인 성공 즉시 스크롤을 맨 위로 리셋하고 주소창 해시 제거
+            window.scrollTo(0, 0);
+            history.replaceState(null, null, window.location.pathname + window.location.search);
         } else {
             loginError.textContent = "비밀번호가 올바르지 않습니다.";
             passwordInput.value = "";

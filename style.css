@@ -322,6 +322,7 @@ body {
     background-color: #10b981; /* 에메랄드 민트 */
     color: #090d16; /* 어두운 글자색 */
     font-size: 14px; /* 11px에서 14px로 확대 */
+    font-weight: 700; /* 글자 굵기만 굵게 */
     padding: 4px 10px; /* 여백 조율 */
     border-radius: 4px;
     margin-top: 4px;
