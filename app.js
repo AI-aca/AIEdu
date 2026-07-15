@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginBtn = document.getElementById("login-btn");
     const loginError = document.getElementById("login-error");
 
-    // 비밀번호 해시값 (0000)
-    const TARGET_HASH = "9a201f97b5e8a53e45dfb08e2f8c5b05adbe840294d1dae8ee9aa255d614dc35";
+    // 비밀번호 해시값 (0000!)
+    const TARGET_HASH = "71317b8d10ebdc84abb38f9426269b71e441c145a8e710a9deb9f9da302fc867";
 
     // 로컬 스토리지에 이미 인증 기록이 있다면 즉시 오버레이 제거
     if (localStorage.getItem("edu_authenticated") === "true") {
