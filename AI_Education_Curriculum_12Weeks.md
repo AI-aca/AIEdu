@@ -2,7 +2,7 @@
 
 본 교육 과정은 비개발자이자 학원 의사결정권자인 원장 및 부원장들을 위해 설계되었습니다. 복잡한 외부 서버 설정이나 유료 호스팅 가입 등 인지 부하가 큰 허들을 제거하고, **구글 안티그래비티 2.0 ➕ 깃허브(GitHub) ➕ 구글 앱스 스크립트(GAS)**의 단 3가지 핵심 도구만을 유기적으로 결합하여 실습 난이도를 획기적으로 낮췄습니다.
 
-특히 모든 실습과제는 수강생들이 사전에 시청한 **유튜브 영상의 튜토리얼 범위(기본 양식 띄우기, 단일 값 계산, 시트에 텍스트 한 줄 전송 등)에서 절대 벗어나지 않는 극도의 간결한 수준**으로 구성하여, 비개발자 원장님들이 영상을 보고 직관적으로 따라 할 수 있도록 설계되었습니다.
+특히 모든 실습과제는 수강생들이 사전에 시청한 **유튜브 영상의 실제 내용 범위(기본 개념, UI 띄우기, 단일 값 계산, 시트에 텍스트 한 줄 전송 등)와 논리적 학습 흐름에 100% 맞아떨어지는 초간결 스펙**으로 매핑하여, 비개발자 원장님들이 영상을 보고 혼란 없이 직관적으로 따라 할 수 있도록 설계되었습니다.
 
 ---
 
@@ -13,17 +13,17 @@ graph TD
     A["1단계: AI 문해력 및 개념 뼈대 (1~2회차)<br>로컬/클라우드 구분 및 에이전트 이해"] --> B["2단계: 안티그래비티 2.0 & 깃허브 입문 (3~4회차)<br><b>[실습 1] 1페이지 모바일 명함 (GitHub V1)</b>"]
     B --> C["3단계: 자율 웹 제작 및 디버깅 (5~7회차)<br><b>[실습 2] 3단 랜딩 페이지</b> / <b>[실습 3] 1단계 단과 계산기 (GitHub V2)</b>"]
     C --> D["4단계: 구글 시트 연동 및 자동화 (8~9회차)<br><b>[실습 4] 1버튼 간이 출석부 (GAS 웹앱 배포)</b>"]
-    D --> E["5단계: AI 이식 및 통합 배포 (10~12회차)<br><b>[실습 5] 1초 AI 안부 문자 생성기 (GAS 최종 통합 배포)</b>"]
+    D --> E["5단계: AI 이식 및 통합 배포 (10~12회차)<br><b>[실습 5] 1초 AI 안부 문자기 (GAS 최종 통합 배포)</b>"]
 ```
 
 ---
 
-## 🎯 5대 마일스톤 수행과제 요약 (영상 범위 매칭 초경량화)
+## 🎯 5대 마일스톤 수행과제 요약 (영상 실제 내용 기반 초경량화)
 
 | 수행과제명 | 수행 주차 | 과제 구체적 내용 (영상 범위 내 초간결 스펙) | 과제 수행 목적 |
 | :--- | :--- | :--- | :--- |
 | **[실습 1]<br>1페이지 모바일 명함** | **4회차** | 안티그래비티에 내 이름, 학원 전화번호, 사진 1장을 던져 **[타이틀-사진-상담링크 버튼 1개]**의 극도로 심플한 단일 웹페이지를 완성하고 깃허브(GitHub)에 백업 | 안티그래비티 2.0에서 에이전트를 부려 결과물을 얻는 흐름을 배우고, 깃허브 저장소를 생성하여 코드를 클라우드에 백업하는 법을 체득합니다. |
-| **[실습 2]<br>3단 랜딩 페이지** | **6회차** | 참고할 랜딩 페이지 캡처본(간단한 3단 레이아웃)을 멀티모달 창에 업로드하여 에이전트가 이를 그대로 모방하게 한 후 깃허브에 푸시 | 이미지 분석(멀티모달) 지시법을 익히고, 안티그래비티를 활용하여 깃허브 저장소에 코드를 안전하게 업데이트 및 누적 보관하는 구조를 배웁니다. |
+| **[실습 2]<br>3단 랜딩 페이지** | **6회차** | 참고할 랜딩 페이지 캡처본(간단한 3단 레이아웃)을 멀티모달 창에 업로드하여 에이전트가 이를 그대로 모방하게 한 후 깃허브에 푸시 | 이미지 분석(멀티모달) 지시법을 익히고, 안티그래비티 활용하여 깃허브 저장소에 코드를 안전하게 업데이트 및 누적 보관하는 구조를 배웁니다. |
 | **[실습 3]<br>1단계 단과 계산기** | **7회차** | 복잡한 할인율 연산 대신, **"수강 과목(단과 10만원 / 종합 30만원) 선택 ➡️ 버튼 클릭 ➡️ 결과 금액 출력"**의 단순 연산 웹앱을 자율 QA 디버깅으로 완성 | 동작 로직 설계 프롬프트를 연습하고, 에이전트 내의 QA 테스트봇을 통해 코드 오류를 자율 진단/치료하는 흐름을 체득합니다. |
 | **[실습 4]<br>1버튼 간이 출석부** | **9회차** | 복잡한 달력/조퇴 체크 기능을 빼고, **"학생 명단 옆 [출석] 버튼 클릭 ➡️ 구글 시트에 학생 이름과 '출석' 텍스트 한 줄 전송"**되는 기능을 구현해 구글 웹앱으로 배포 | 별도 외부 서버 없이 구글 스프레드시트 ➕ GAS 배포만으로 전 세계 어디서나 접속할 수 있는 모바일 웹 주소 발급 및 동시 접속 데이터 보호 원리를 마스터합니다. |
 | **[실습 5]<br>1초 AI 안부 문자 생성기** | **11회차** | 문자 생성기 웹 창에 **"오늘 학생 태도(예: '우수함') 선택 ➡️ AI가 '오늘 태도가 매우 우수했습니다' 문장 한 줄 자동 생성 ➡️ 문자/카톡 발송"** 기능을 탑재해 최종 배포 | 외부 API 통신을 GAS 환경에 결합하여 단일 구글 링크로 모든 학원 행정을 처리하는 최종 웹 서비스를 런칭합니다. |
@@ -65,102 +65,114 @@ graph TD
 
 ---
 
-## 🛠️ 회차별 상세 교육 과정 (학습 목적, 영상 링크 명시)
+## 🛠️ 회차별 상세 교육 과정 (유기적 흐름 및 영상 실제 내용 일치 완료)
 
 ### [1단계: AI 문해력 및 개념 뼈대 다지기 (1~2회차)]
+> 본격적인 도구 제어 전에, AI 바이브 코딩의 실태와 개인정보 보안의 뼈대를 단단히 정립합니다.
 
 #### 1회차: 로컬 AI vs 클라우드 AI의 개념과 보안 설계
 *   **회차 학습 목적**: 로컬과 클라우드 AI의 기술적 차이를 이해하여 개인정보 노출 걱정 없는 안전한 학원 데이터 활용 가이드를 세웁니다.
 *   **권장 시청 영상**:
-    *   [이게 말이 되나...? 누가 쓰나 확인해봤더니 틈새시장이네요 | 바이브 코딩](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbVQT0EBg3m0YxIKu_PA-U7_gCgLsdP43at_taBV_StiuMyDQ8B7OFvU4Y9VzOf_IU2CuWBSlSjb_mCYhqBJIo4e0cKVEd8ObwOY4T8eusGhDhwrHiMNrNdkoknztCu9DN)
+    *   [서버와 클라우드의 개념 완벽 정리 | 얄팍한 코딩사전](https://youtu.be/1dF1-j5X18g)
+    *   [인터넷 없이 돌아가는 나만의 로컬 AI 비서 만들기 | Ollama 가이드](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTH_FDq4OpciXB4m0YxIKu_PA-U7_gCgLsdP43at_taBV_StiuMyDQ8B7OFvU4Y9VzOf_IU2CuWBSlSjb_mCYhqBJIo4e0cKVEd8ObwOY4T8eusGhDhwrHiMNrNdkoknztCu9DN)
+    *   *(영상 내용 연계)*: 내 로컬 장치(컴퓨터)와 원격 클라우드 서버의 데이터 이동 원리를 만화로 명확히 파악하고, Ollama와 같은 로컬 LLM을 오프라인 구동할 때 데이터 유출이 물리적으로 원천 차단되는 보안적 장점을 눈으로 확인합니다.
 *   **교육 내용**: ChatGPT/Gemini 같은 '클라우드 AI'와 오프라인 구동이 가능한 '로컬 AI(Ollama)'의 비용 및 개인정보 보안(성적표, 상담일지 유출 차단)의 차이점을 파악합니다.
 *   **활동**: 학원의 민감 데이터를 지키기 위한 보안 전략 수립 토론. *(실습 없음)*
 
-#### 2회차: 단순 코딩 조수(1.0)와 자율 에이전트(2.0)의 차이 이해
-*   **회차 학습 목적**: 구버전 코딩 도구와 2.0 자율 에이전트의 작동 차이를 알고, 안티그래비티 2.0 플랫폼의 설치 및 기본 작동 환경을 세팅합니다.
+#### 2회차: 자율 코딩 툴의 필요성 이해 및 첫 환경 설치
+*   **회차 학습 목적**: 코딩 에디터의 발전 흐름을 알고, 나에게 필요한 도구를 선택해 안티그래비티 2.0 플랫폼을 내 컴퓨터에 세팅합니다.
 *   **권장 시청 영상**:
-    *   [바이브 코딩, 어떤 툴을 써야 할까요? Replit vs Cursor vs Windsurf](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFG8FsFMkLlyJXHhcWdzB8B4n9KR8MMiPL1R-SWbpWwWJw4yzUyEgEJMKKScKIWyPiiVIcthiW2cln23948f9xUP1xIEFhTX4i76PIO8MmlZlXrKAkU1HVLHCnEa4AVGNI4)
-    *   [바이브코딩에 Cursor, Windsurf, Claude Code 뭐 써야 해요?](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBoBEbBEmpdxuI89_ugb9z4HjtDbbUIiOxCc7C_4ic99xs9p5g2Tne4UkpEFpQkRJmJxnJjXBEaM_TM_204ALtfqTHhIP5uVYf0sBlKJBrDWwPmRt-4KGD2EPPBxullKjF)
-*   **교육 내용**: 사용자가 한 줄씩 코딩을 고쳐야 하는 구버전 AI 환경과, AI 에이전트들이 스스로 회의를 거쳐 프로그램을 빌드해 주는 안티그래비티 2.0의 자율 에이전트 흐름을 이해합니다.
-*   **활동**: 안티그래비티 2.0 독립 실행 데스크톱 앱 다운로드 및 연동. *(실습 없음)*
+    *   [40대, 50대가 '바이브 코딩'을 해야 하는 3가지 이유 + Cursor AI 바로 실습](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEodVh2EZT29p2IWrT5JfJGsWVdBWV6CAGo1euVU3-Tz55z5FtblwVqxDKuxnbdiQEQMCmARU5D8XOX4Z5FmNlztL183zMyVHtLGVydrUGor4KPhlpG4526Oxc0AhUV_TlQ)
+    *   *(영상 내용 연계)*: 비개발자가 AI 에디터를 바로 가동하여 첫 화면을 띄우는 설치 및 조작 과정을 간접 경험하며 나도 할 수 있다는 자신감을 획득합니다.
+*   **교육 내용**: 단순 코딩 조수 기능과 중앙 통제식 에이전트의 작동 흐름을 이해하고, 내 로컬 컴퓨터에 안티그래비티 2.0 데스크톱 앱을 다운로드 및 연동합니다.
+*   **활동**: 안티그래비티 2.0 독립 실행 데스크톱 앱 설치 및 인증. *(실습 없음)*
 
 ---
 
 ### [2단계: 안티그래비티 2.0 & 깃허브 입문 (3~4회차)]
+> 에디터 사용 전 필수 용어를 정립하고 깃허브와 연동하여 첫 실습 결과물을 백업합니다.
 
-#### 3회차: 안티그래비티 2.0 제어 및 깃허브(GitHub) 연동 세팅
-*   **회차 학습 목적**: 안티그래비티 2.0 인터페이스를 익히고 깃허브(GitHub) 계정을 연결하여, 내가 만드는 코드의 원클릭 클라우드 백업 환경을 완성합니다.
+#### 3회차: 바이브 코딩 필수 용어 정립 및 깃허브(GitHub) 가입
+*   **회차 학습 목적**: 에이전트를 제어하기 전에 HTML, API, Git 등 필수 컴퓨터 용어를 정립하고, 깃허브 원격 연동 환경을 구축합니다.
 *   **권장 시청 영상**:
-    *   [깃, 깃허브 한번에 이해하기 | 코딩알려주는누나](https://youtu.be/h_1c_NlM6uQ) (비개발자 눈높이에 맞춘 깃허브 가입 및 기본 구조 안내)
-    *   [비개발자를 위한 안티그래비티 2.0 사용법 및 바이브코딩 기초](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHvMgWBpbNHP-5xYCXNDtB_b8DIkE_wOlV_2UOii_E1d6NJsm8hP1QZUuSpPZfkLJiW5n91wLppT2XOnuIEDAmciCaVHTXtsyPCBWgA1ISZjldU6RR545BHw3w3Qay2etQ)
-*   **교육 내용**: 안티그래비티 2.0에서 에이전트와 소통하는 제어판 구조를 익히고, 깃허브 원격 저장소를 생성하여 연결하는 연동 실습을 진행합니다.
-*   **활동**: 깃허브 무료 가입 및 안티그래비티 연동 환경 설정.
+    *   [바이브 코딩 시작 전 필수 용어 20개 정리](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpDbCKFwLL-aPjhRkOflXIJcx0cQZMzspDNTKY-NLaYeFEkh7NoDwvBFqVb7HzXGwaZ-WoJOMr_zZba3_spS_Pd6gfqEO1PGr7G99KAaAwsx_sp8p68NeEy0pIPK8FzM6e)
+    *   [깃, 깃허브 한번에 이해하기 | 코딩알려주는누나](https://youtu.be/h_1c_NlM6uQ)
+    *   *(영상 내용 연계)*: 용어 정리를 완벽히 파악한 뒤, 깃허브에 회원 가입을 진행하고 내 저장소를 개설하는 기초 흐름을 습득합니다.
+*   **교육 내용**: 안티그래비티의 지시서 작성에 기초가 되는 개발 상식 용어 20개를 마스터하고, 내 깃허브 계정과 안티그래비티 제어판을 동기화합니다.
+*   **활동**: 깃허브 무료 가입 및 안티그래비티 Git 연동 설정 완료.
 
 #### 4회차: 에이전트 지휘 실습 및 모바일 명함 깃허브 백업
-*   **회차 학습 목적**: 텍스트와 사진을 에이전트에 전달하여 화면을 도출하는 워크플로우를 마스터하고, 깃허브 저장소에 코드를 안전하게 백업(Push)합니다.
+*   **회차 학습 목적**: 자연어로 지시를 내려 1페이지의 초간결 명함을 제작하고, 이를 깃허브 클라우드에 영구 백업(Push)합니다.
 *   **권장 시청 영상**:
-    *   [40대, 50대가 '바이브 코딩'을 해야 하는 3가지 이유 + Cursor AI 바로 실습](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEodVh2EZT29p2IWrT5JfJGsWVdBWV6CAGo1euVU3-Tz55z5FtblwVqxDKuxnbdiQEQMCmARU5D8XOX4Z5FmNlztL183zMyVHtLGVydrUGor4KPhlpG4526Oxc0AhUV_TlQ)
-*   **교육 내용**: 원장님 프로필 텍스트와 이미지를 던져 결과물을 받아온 후, 안티그래비티의 Git 기능으로 깃허브에 원클릭 백업하는 법을 배웁니다.
-*   **🎯 [실습 1 완료] 1페이지 모바일 명함 페이지**: 프로필 및 카카오톡 상담 링크가 탑재된 웹 명함 완성 및 깃허브 백업(V1).
+    *   [바이브 코딩이 뭐냐고요? 그냥 말하면 코드가 나옵니다](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtCQZPSFrucA148TfbyB6bOBC9UkaZ6qknwqRm5O4kDvXWFUijMHyzAmzKzsZL6XvA6BMUbkQ7m2hsZbshOB-TS1k2xzq2EHe0T2TFmbWpNxu8Opk2NFtUzWKBDBlp9_MN)
+    *   *(영상 내용 연계)*: 말로 하면 화면이 완성되는 AI 에이전트 지휘 워크플로우를 그대로 매칭하여 내 프로필 웹 명함을 생성합니다.
+*   **🎯 [실습 1 완료] 1페이지 모바일 명함**: 내 사진과 전화번호, 카카오톡 상담 링크 버튼으로 구성된 모바일 명함 페이지를 빌드하고 깃허브 첫 백업 완료(V1).
 
 ---
 
 ### [3단계: 자율 웹 제작 및 디버깅 워크플로우 (5~7회차)]
+> 이미지 캡처 모방과 자율 디버깅을 제어하며 계산기 앱을 구축합니다.
 
-#### 5회차: 웹 화면 디자인 요소 및 멀티모달 디자인 모방(Copy) 기획
-*   **회차 학습 목적**: 타 사이트의 레이아웃 캡처본(이미지)을 에이전트에 입력하여 시각적 디자인 컨셉을 지시하는 멀티모달 기획법을 배웁니다.
+#### 5회차: 스크린샷 캡처를 통한 디자인 모방 및 3단 레이아웃 기획
+*   **회차 학습 목적**: 참고할 만한 사이트 화면을 캡처해 디자인을 의뢰하고, 웹 화면 레이아웃 지시 시 발생하는 예외 대처법을 배웁니다.
 *   **권장 시청 영상**:
-    *   [바이브 코딩이 뭐냐고요? 그냥 말하면 코드가 나옵니다](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtCQZPSFrucA148TfbyB6bOBC9UkaZ6qknwqRm5O4kDvXWFUijMHyzAmzKzsZL6XvA6BMUbkQ7m2hsZbshOB-TS1k2xzq2EHe0T2TFmbWpNxu8Opk2NFtUzWKBDBlp9_MN)
-*   **교육 내용**: 타 학원 사이트 디자인 캡처본(멀티모달 이미지)을 에이전트에 보여주고 스타일 모방을 유도하는 디자인 지시법을 배웁니다.
-*   **활동**: 학원 마케팅 원고 준비 및 레이아웃 캡처본 설정. *(실습 없음)*
+    *   [바이브 코딩 시작을 위한 필수 지식 가이드](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsb66bvMTRMMFVM_X15nOZ_Zs1raGj1Rl7_SsrdTUI_fCEnNu6nPC5TxNCH6-1bBKqM9P43YYFpQRxEIKUeWgt3imx_r4BrdilXSWxMoTyd6ph0DVhwhi5BYf9OKuIklfz)
+    *   *(영상 내용 연계)*: 에이전트가 코딩을 하다가 사소한 충돌을 내거나 레이아웃을 잘못 배치했을 때, 지시서를 끊어 쓰고 조율하는 필수 지식 요령을 배웁니다.
+*   **교육 내용**: 타 사이트 스크린샷 이미지를 멀티모달 창에 올려 디자인 스타일 복제를 지시하는 법을 익힙니다.
+*   **활동**: 학원 마케팅 텍스트 원고 준비 및 롤모델 사이트 캡처 완료. *(실습 없음)*
 
 #### 6회차: 에이전트 지휘를 통한 학원 랜딩 페이지 실습 완료
 *   **회차 학습 목적**: 디자인 빌더 에이전트를 가이드하여 원하는 디자인 피드백을 전달하고 완성도 높은 단일 소개 페이지를 구축해 깃허브에 백업합니다.
 *   **권장 시청 영상**:
-    *   [바이브 코딩 시작 전 필수 용어 20개 정리](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpDbCKFwLL-aPjhRkOflXIJcx0cQZMzspDNTKY-NLaYeFEkh7NoDwvBFqVb7HzXGwaZ-WoJOMr_zZba3_spS_Pd6gfqEO1PGr7G99KAaAwsx_sp8p68NeEy0pIPK8FzM6e)
+    *   [바이브코딩에 Cursor, Windsurf, Claude Code 뭐 써야 해요?](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBoBEbBEmpdxuI89_ugb9z4HjtDbbUIiOxCc7C_4ic99xs9p5g2Tne4UkpEFpQkRJmJxnJjXBEaM_TM_204ALtfqTHhIP5uVYf0sBlKJBrDWwPmRt-4KGD2EPPBxullKjF)
+    *   *(영상 내용 연계)*: 도구들의 코딩 자율 생성 동작을 간접 경험하고, 랜딩 페이지 빌드에 필요한 HTML/CSS 화면 완성 프로세스를 이식합니다.
 *   **🎯 [실습 2 완료] 3단 랜딩 페이지**: 기획 원고와 스크린샷 디자인을 바탕으로 완성된 랜딩 페이지 빌드 및 깃허브 백업.
 
-#### 7회차: 동작 명세 전달 및 에이전트 자율 QA 디버깅 실습 완료
-*   **회차 학습 목적**: 수강료 계산 공식을 논리적 텍스트로 설계하여 에이전트에게 구현시키고, 자율 테스팅 및 디버깅 승인 절차를 마스터합니다.
+#### 7회차: 1단계 단과 계산기 로직 및 자율 QA 디버깅 실습 완료
+*   **회차 학습 목적**: 텍스트 계산 공식을 구현하고, 계산 오류가 났을 때 자율 QA봇이 디버깅을 돌려 스스로 코드를 고치도록 조종합니다.
 *   **권장 시청 영상**:
-    *   [바이브 코딩 시작을 위한 필수 지식 가이드](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsb66bvMTRMMFVM_X15nOZ_Zs1raGj1Rl7_SsrdTUI_fCEnNu6nPC5TxNCH6-1bBKqM9P43YYFpQRxEIKUeWgt3imx_r4BrdilXSWxMoTyd6ph0DVhwhi5BYf9OKuIklfz)
+    *   [초보자를 위한 디버깅 비법](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmoUdD5S7ZbDhwByPOJvLsCwvC_W6P2-Ytg9GBVEj8ELkk7VsQoFu9omvmIuBz1RwlMdF7OyzxUXIfmFcnyjEWa_fgMngmwnG747WOZz76YicEoghRniZxDbaoW0tqRZkm)
+    *   *(영상 내용 연계)*: 에러 로그나 비정상 결과값을 에이전트 대화창에 던져서 "어디서 버그가 났는지 고쳐줘"라고 요청해 코드를 정정받는 자가 디버깅 노하우를 배웁니다.
 *   **🎯 [실습 3 완료] 1단계 단과 계산기**: 할인 조건에 따라 계산 결과가 자동 렌더링되는 수강료 계산기 완성 및 깃허브 백업.
 
 ---
 
 ### [4단계: 구글 시트 연동 및 자동화 배포 (8~9회차)]
+*   구글 스프레드시트를 행정 데이터베이스로 연동하고 구글 GAS를 통해 무료 모바일 주소로 배포합니다.
 
 #### 8회차: 스프레드시트 데이터 연동의 원리 및 GAS 통신 구상
 *   **회차 학습 목적**: 학원 데이터를 담는 구글 시트와 웹앱의 통신 구조(API)를 이해하고, 에이전트에게 데이터 스키마 설계를 의뢰하는 법을 배웁니다.
 *   **권장 시청 영상**:
-    *   [이제 구글 시트로 다 됩니다! 완전 무료, AI 초보자도 OK!](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnguFYsB_GoiQdgkV0kaLnkgif8STwAVgwsmqpGfJOcECd42vv2sVV5Fw_9LNKDjGEUVDH51hv4u0d6vQeUj3F-Qz8UreM7rfKHrbL9GnVQfEyIJGXxQceWjJ2MyANEZQZ) (구글 시트와 AI 결합 기초 흐름 안내)
+    *   [이제 구글 시트로 다 됩니다! 완전 무료, AI 초보자도 OK!](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnguFYsB_GoiQdgkV0kaLnkgif8STwAVgwsmqpGfJOcECd42vv2sVV5Fw_9LNKDjGEUVDH51hv4u0d6vQeUj3F-Qz8UreM7rfKHrbL9GnVQfEyIJGXxQceWjJ2MyANEZQZ)
+    *   *(영상 내용 연계)*: 구글 시트를 AI 에디터와 연계하여 백엔드 데이터베이스로 설정하고 화면 데이터를 기록하는 원리를 학습합니다.
 *   **교육 내용**: 안티그래비티 2.0에 구글 시트 링크를 브리핑하고, 구글 앱스 스크립트(GAS)를 생성하여 웹 화면과 시트를 연결하는 통신 원리를 배웁니다.
 *   **활동**: 학원생 데이터 구글 스프레드시트 포맷 구축 및 통신 구조 기획. *(실습 없음)*
 
-#### 9회차: GAS 웹앱 배포를 통한 동시사용형 출석부 실습 완료
+#### 9회차: GAS 웹앱 배포를 통한 1버튼 간이 출석부 실습 완료
 *   **회차 학습 목적**: 구글 시트 편집기에서 구글 앱스 스크립트(GAS)를 웹 앱 형식으로 직접 배포하여, 외부 클라우드 가입 없이 무료 모바일 웹 주소 발급을 마스터합니다.
 *   **권장 시청 영상**:
-    *   [[AI자동화학교] 컴퓨터가 꺼져도 24시간 돌아가는 자동화 시스템 만들기](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQET1Rb7KBL74XFvRtRZfV51yfNT-QrWrsfxugatno5RuX3VuwovTrQ26zbH1zFZm34zDzJVU_GjrJV-DhX18lh7y_HfdOXD5Jo4UyE0kD1gbVVt2X_1pBilnA-Wgx-C2ElU) (GAS 웹앱 배포 및 권한 설정법)
+    *   [[AI자동화학교] 컴퓨터가 꺼져도 24시간 돌아가는 자동화 시스템 만들기](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQET1Rb7KBL74XFvRtRZfV51yfNT-QrWrsfxugatno5RuX3VuwovTrQ26zbH1zFZm34zDzJVU_GjrJV-DhX18lh7y_HfdOXD5Jo4UyE0kD1gbVVt2X_1pBilnA-Wgx-C2ElU)
     *   [바이브 코딩으로 이제 내가 필요하고 상상하는 모든 걸 만들 수 있게 되었습니다.](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYGhoPjz4xq99vOioLP-fNn9P_YtlO5eiK2xMFHY8lRNHkTzutinE3mTE-7G1R-ygyKdzdTnBdSX4duErP-THHs8pwQCZ0JSltAakfvPpZc2jj6atorfJhtZTb30HWzrQaspWG)
 *   **🎯 [실습 4 완료] 1버튼 간이 출석부**: 다수의 사용자가 클릭해도 충돌 없이 구글 스프레드시트에 양방향 실시간 기록되는 출결 앱 최종 완성 및 구글 링크 배포.
 
 ---
 
 ### [5단계: AI 비서 연동 및 GAS 최종 통합 배포 (10~12회차)]
+*   Gemini API를 내 웹앱에 얹어 AI 안부문자기를 빌드하고 최종적으로 깃허브에 소스코드를 영구 보존합니다.
 
 #### 10회차: Gemini API 연동 메시지 생성 구조 기획
 *   **회차 학습 목적**: Gemini API 연동을 위한 구글 AI 스튜디오 사용법을 마스터하고, 상담 코멘트를 작성하는 AI 프롬프트 가이드라인을 설계합니다.
 *   **권장 시청 영상**:
-    *   [기술노트with 알렉 - API 기초 개념 완벽 이해하기](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdKZMyonVparHXGfp19D9PiNuxWohcBjs7fKHCr21Es8T6p0i1ng5Ug_e3GKZew1MLmmTFOlKyxOqhmkr8V72qkpAr_Xhli2CNzwQhIH_hjgVzH7gCmUKDCo42EBu30k8=) (비개발자를 위한 API 키 및 JSON 구조 핵심 설명)
-*   **교육 내용**: 구글 AI 스튜디오에서 Gemini API 키를 발급받아 내 웹앱에 얹고, 입력된 태도/진도 데이터를 AI가 어떻게 존댓말 문장으로 다듬을지 프롬프트를 설계합니다.
+    *   [기술노트with 알렉 - API 기초 개념 완벽 이해하기](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdKZMyonVparHXGfp19D9PiNuxWohcBjs7fKHCr21Es8T6p0i1ng5Ug_e3GKZew1MLmmTFOlKyxOqhmkr8V72qkpAr_Xhli2CNzwQhIH_hjgVzH7gCmUKDCo42EBu30k8=)
+    *   *(영상 내용 연계)*: API 키를 활용해 내 로컬 프로그램이 클라우드 대형 언어 모델과 API 통신을 주고받는 기초 개념을 명확하게 다집니다.
 *   **활동**: API 키 획득 및 메시지 톤 앤 매너(친근함, 정중함 등) 지시서 기획. *(실습 없음)*
 
 #### 11회차: GAS 최종 통합 배포 및 깃허브 영구 백업 실습 완료
 *   **회차 학습 목적**: 구글 앱스 스크립트(GAS)의 `웹 앱 새 버전 배포` 기능을 활용하여 기존 출석부/계산기와 AI 안부 메시지 모듈을 최종 연동/배포하고, 깃허브에 최종 마스터 코드를 영구 보존합니다.
 *   **권장 시청 영상**:
-    *   [제대로 파는 Git & GitHub | 얄팍한 코딩사전](https://youtu.be/1I3hMwQU6GU) (깃허브 커밋/푸시 원리 최종 리마인드)
-*   **교육 내용**: Gemini API 호출 모듈이 추가된 완성형 구글 앱스 스크립트 웹앱을 재배포하고, 내 모바일 폰에 등록한 뒤 안티그래비티로 최종 소스코드를 깃허브 저장소에 완벽히 보관합니다.
-*   **🎯 [실습 5 완료] 1초 AI 안부 문자 생성기**: 구글 스프레드시트 ➕ GAS 배포 ➕ 깃허브 연동 기반의 통합 학원 행정 도구 최종 런칭.
+    *   [제대로 파는 Git & GitHub | 얄팍한 코딩사전](https://youtu.be/1I3hMwQU6GU)
+    *   *(영상 내용 연계)*: 기획 프로젝트 완결 후 깃 원클릭 백업을 통해 내 모든 피땀 어린 코드를 깃허브 클라우드에 영구 소장 및 복구하는 백업 프로세스를 마감합니다.
+*   **🎯 [실습 5 완료] 1초 AI 안부 문자기**: 구글 스프레드시트 ➕ GAS 배포 ➕ 깃허브 연동 기반의 통합 학원 행정 도구 최종 런칭.
 
 #### 12회차: 종합 성과 시연회 및 학원 행정 자동화 연동 로드맵
 *   **교육 내용**: 각 원장/부원장님이 12주간 빌드한 5대 결과물을 직접 스마트폰으로 시연합니다. 학원 카카오톡 채널, 문자 메시지, 블로그 상담 안내 폼 등에 내 도메인 주소 링크를 결합하여 실제 학원 마케팅과 행정에 즉시 연동하는 활용 계획을 발표합니다.
