@@ -1,26 +1,68 @@
 /* ==========================================
    Antigravity 2.0 마스터 코스 JS 스크립트
-   (아코디언 모션 및 사이드바 내비게이션 스크롤 동기화)
+   (보안 로그인, 아코디언 모션 및 사이드바 내비게이션 스크롤 동기화)
    ========================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
+    // SHA-256 단방향 암호화 변환 함수
+    async function sha256(message) {
+        const msgBuffer = new TextEncoder().encode(message);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+    }
+
+    // 0. 로그인 보호 및 로컬스토리지 세션 유지 기능
+    const loginOverlay = document.getElementById("login-overlay");
+    const passwordInput = document.getElementById("password-input");
+    const loginBtn = document.getElementById("login-btn");
+    const loginError = document.getElementById("login-error");
+
+    // 비밀번호 해시값 (0000)
+    const TARGET_HASH = "9a201f97b5e8a53e45dfb08e2f8c5b05adbe840294d1dae8ee9aa255d614dc35";
+
+    // 로컬 스토리지에 이미 인증 기록이 있다면 즉시 오버레이 제거
+    if (localStorage.getItem("edu_authenticated") === "true") {
+        loginOverlay.classList.add("hidden");
+    }
+
+    async function handleLogin() {
+        const inputVal = passwordInput.value;
+        const hashedVal = await sha256(inputVal);
+
+        if (hashedVal === TARGET_HASH) {
+            localStorage.setItem("edu_authenticated", "true");
+            loginOverlay.classList.add("hidden");
+            loginError.textContent = "";
+        } else {
+            loginError.textContent = "비밀번호가 올바르지 않습니다.";
+            passwordInput.value = "";
+            passwordInput.focus();
+        }
+    }
+
+    if (loginBtn) {
+        loginBtn.addEventListener("click", handleLogin);
+    }
+    if (passwordInput) {
+        passwordInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                handleLogin();
+            }
+        });
+    }
+
     // 1. 아코디언 토글 기능
     const cards = document.querySelectorAll(".week-card");
 
     cards.forEach((card) => {
+        // 실습 카드(has-practice)는 고정되어 있으므로 토글 기능에서 배제
+        if (card.classList.contains("has-practice")) {
+            return;
+        }
+
         const header = card.querySelector(".card-header");
-        const body = card.querySelector(".card-body");
-
         header.addEventListener("click", () => {
-            // 이미 열려있는 카드가 있으면 닫기 (선택사항 - 한 개씩만 열리게 하고 싶다면)
-            /*
-            cards.forEach(otherCard => {
-                if (otherCard !== card && otherCard.classList.contains('open')) {
-                    otherCard.classList.remove('open');
-                }
-            });
-            */
-
             card.classList.toggle("open");
         });
     });
@@ -72,3 +114,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
