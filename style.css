@@ -289,39 +289,40 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: #ef4444; /* YouTube Red */
-    color: #ffffff;
-    padding: 10px 16px;
+    background-color: #090d16; /* 딥 블랙/남색 */
+    border: 1px solid #06b6d4; /* 시안 블루 테두리 */
+    color: #06b6d4; /* 시안 블루 텍스트 */
+    padding: 10px 18px;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px; /* 13px에서 14px로 확대 */
     font-weight: 700;
     margin-top: 6px;
     transition: all 0.2s ease;
 }
 
 .btn-video:hover {
-    background-color: #dc2626;
+    background-color: #06b6d4; /* 시안 블루 채우기 */
+    color: #090d16; /* 글씨색 어둡게 반전 */
     transform: translateY(-2px);
 }
 
-/* 🎯 특별 실습 카드 테두리 (엠버 골드 펄 효과) */
+/* 🎯 특별 실습 카드 테두리 (에메랄드 민트 펄 효과) */
 .week-card.has-practice {
-    border: 1px dashed #f59e0b; /* Amber */
+    border: 1px dashed #10b981; /* 에메랄드 민트 */
     position: relative;
 }
 
 .week-card.has-practice:hover {
-    border-color: #fbbf24;
-    box-shadow: 0 0 15px rgba(245, 158, 11, 0.15);
+    border-color: #34d399;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.08);
 }
 
 .card-practice-badge {
-    background-color: #f59e0b;
-    color: #0f172a;
-    font-size: 11px;
-    font-weight: 800;
-    padding: 3px 8px;
+    background-color: #10b981; /* 에메랄드 민트 */
+    color: #090d16; /* 어두운 글자색 */
+    font-size: 14px; /* 11px에서 14px로 확대 */
+    padding: 4px 10px; /* 여백 조율 */
     border-radius: 4px;
     margin-top: 4px;
     display: inline-block;
@@ -330,8 +331,8 @@ body {
 
 /* 실습 상세 박스 */
 .practice-box {
-    background-color: rgba(245, 158, 11, 0.04);
-    border: 1px solid rgba(245, 158, 11, 0.2);
+    background-color: rgba(16, 185, 129, 0.03); /* 민트 반투명 */
+    border: 1px solid rgba(16, 185, 129, 0.15);
     border-radius: 8px;
     padding: 20px;
     margin-top: 24px;
