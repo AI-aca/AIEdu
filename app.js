@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
     }
 
-    // 0. 로그인 보호 및 로컬스토리지 세션 유지 기능
+    // 0. 로그인 보호 기능 (나갔다 들어오면 매번 비밀번호 요구)
+    localStorage.removeItem("edu_authenticated"); // 기존 세션 흔적 강제 소거
     const loginOverlay = document.getElementById("login-overlay");
     const passwordInput = document.getElementById("password-input");
     const loginBtn = document.getElementById("login-btn");
@@ -21,17 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // 비밀번호 해시값 (0000!)
     const TARGET_HASH = "71317b8d10ebdc84abb38f9426269b71e441c145a8e710a9deb9f9da302fc867";
 
-    // 로컬 스토리지에 이미 인증 기록이 있다면 즉시 오버레이 제거
-    if (localStorage.getItem("edu_authenticated") === "true") {
-        loginOverlay.classList.add("hidden");
-    }
-
     async function handleLogin() {
         const inputVal = passwordInput.value;
         const hashedVal = await sha256(inputVal);
 
         if (hashedVal === TARGET_HASH) {
-            localStorage.setItem("edu_authenticated", "true");
             loginOverlay.classList.add("hidden");
             loginError.textContent = "";
         } else {
